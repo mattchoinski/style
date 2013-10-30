@@ -1,0 +1,21 @@
+BODY {
+	width: 1024px;
+}
+
+.columns SECTION {
+	margin: 0 1.953125% 0 1.953125%;
+	width: 96.09375%;
+}
+
+.columns.three SECTION,
+.columns.two.offset SECTION + SECTION {
+	width: 29.427083333%;
+}
+
+.columns.two SECTION {
+	width: 46.09375%;
+}
+	
+.columns.two.offset SECTION {
+	width: 62.76041666666667%;
+}

@@ -471,14 +471,39 @@ TABLE TH {
 	BODY {
 		width: 768px;
 	}
+	
+	FIELDSET INPUT[type=email],
+	FIELDSET INPUT[type=email].large,
+	FIELDSET INPUT[type=email].medium,
+	FIELDSET INPUT[type=file],
+	FIELDSET INPUT[type=password],
+	FIELDSET INPUT[type=password].large,
+	FIELDSET INPUT[type=password].medium,
+	FIELDSET INPUT[type=search],
+	FIELDSET INPUT[type=search].large,
+	FIELDSET INPUT[type=search].medium,
+	FIELDSET INPUT[type=text],
+	FIELDSET INPUT[type=text].large,
+	FIELDSET INPUT[type=text].medium,
+	FIELDSET TEXTAREA,
+	FIELDSET TEXTAREA.large,
+	FIELDSET TEXTAREA.medium,
+	FIELDSET UL,
+	FIELDSET UL.large,
+	FIELDSET UL.medium,
+	.columns SECTION {
+	    width: 94.791666666%;
+	}
 
+	.columns H1,
 	.columns SECTION {
 		margin: 0 2.604166666% 0 2.604166666%;
-		width: 94.791666666%;
 	}
 
 	.columns.three SECTION,
-	.columns.two SECTION {
+	.columns.two SECTION,
+	.columns.two.offset SECTION,
+	.columns.two.offset SECTION + SECTION {
 		width: 44.791666666%;
 	}
 
@@ -487,6 +512,7 @@ TABLE TH {
 @media (min-width: 321px ) and ( max-width: 767px ) {
 
 	BODY {
+		font-size: 0.95em;
 		width: 100%;
 	}
 
@@ -520,14 +546,16 @@ TABLE TH {
 		width: 78.33333333333333%;
 	}
 
+	.columns H1,
 	.columns SECTION {
 		margin: 0 2.083333333% 0 2.083333333%;
 	}
 
 	.columns.three SECTION,
-	.columns.two SECTION {
+	.columns.two SECTION,
+	.columns.two.offset SECTION,
+	.columns.two.offset SECTION + SECTION {
 		float: none;
-		margin-bottom: 20px;
 		width: 95.833333333%;
 	}
 
@@ -565,26 +593,16 @@ TABLE TH {
 		width: 176px;
 	}
 	
-	HEADER H1 {
-		float: none;
-		margin-bottom: 0;
-		padding-right: 0;
-	}
-	
-	HEADER NAV OL LI {
-		border-top: solid 1px #ccc;
-		height: 40px;
-		width: 148px;
-	}
-	
+	.columns H1,
 	.columns SECTION {
 		margin: 0 10px 0 10px;
 	}
 
 	.columns.three SECTION,
-	.columns.two SECTION {
+	.columns.two SECTION,
+	.columns.two.offset SECTION,
+	.columns.two.offset SECTION + SECTION {
 		float: none;
-		margin-bottom: 20px;
 		width: 300px;
 	}
 
