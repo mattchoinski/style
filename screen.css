@@ -351,14 +351,6 @@ HEADER NAV OL LI {
 	width: 100px;
 }
 
-HGROUP H1 + H2 {
-	margin-top: -20px;
-}
-
-HGROUP H2 + H3 {
-	margin-top: -14px;
-}
-
 HTML {
 	background-color: #efefef;
 }
