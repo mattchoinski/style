@@ -69,7 +69,8 @@ BODY,
 FOOTER,
 HEADER,
 HTML,
-NAV {
+NAV,
+SECTION {
 	position: relative;
 }
 
@@ -194,6 +195,17 @@ FIELDSET INPUT[type=text].x-small {
 
 FIELDSET LABEL {
     display: block;
+}
+
+FIELDSET LABEL SPAN {
+	color: #999;
+	font-size: 0.90em;
+}
+
+FIELDSET LABEL SPAN.required {
+	color: #ff0000;
+	font-weight: bold;
+	padding-left: 4px;
 }
 
 FIELDSET LI {
@@ -406,6 +418,11 @@ TABLE TBODY TR:hover TD {
 	background-color: #f5f5f5;
 }
 
+TABLE TFOOT {
+	border-bottom: solid 2px #ddd;
+	border-top: solid 2px #ddd;
+}
+
 TABLE THEAD {
 	cursor: pointer;
 }
@@ -443,6 +460,18 @@ TABLE TH {
 		width: 1024px;
 	}
 
+	TH.large {
+		width: 18.292682926%;
+	}
+	
+	TH.medium {
+		width: 8.1300813%;
+	}
+	
+	TH.small {
+		width: 4.06504065%;
+	}
+
 	.columns H1,
 	.columns SECTION {
 		margin: 0 1.953125% 0 1.953125%;
@@ -465,6 +494,10 @@ TABLE TH {
 		width: 62.76041666666667%;
 	}
 	
+	.hidden-desktop {
+		display: none;
+	}
+
 }
 
 @media ( min-width: 768px ) and ( max-width: 979px ) {
@@ -494,6 +527,18 @@ TABLE TH {
 	FIELDSET UL.medium,
 	.columns SECTION {
 	    width: 94.791666666%;
+	}
+	
+	TH.large {
+		width: 24.725274725%;
+	}
+
+	TH.medium {
+		width: 10.989010989%;
+	}
+
+	TH.small {
+		width: 5.494505494%;
 	}
 
 	.columns H1,
@@ -594,6 +639,23 @@ TABLE TH {
 		width: 176px;
 	}
 	
+	H1,
+	H1 SPAN {
+		font-size: 1.10em;
+	}
+	
+	TH.large {
+		width: 180px;
+	}
+	
+	TH.medium {
+		width: 80px;
+	}
+	
+	TH.small {
+		width: 40px;
+	}
+
 	.columns H1,
 	.columns SECTION {
 		margin: 0 10px 0 10px;
