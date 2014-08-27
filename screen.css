@@ -3,6 +3,7 @@ ABBR,
 ACRONYM,
 ADDRESS,
 ARTICLE,
+B,
 BLOCKQUOTE,
 CAPTION,
 CITE,
@@ -58,6 +59,10 @@ VAR {
 
 A {
 	color: #000;
+}
+
+B {
+	font-weight: normal;
 }
 
 BODY {
@@ -356,8 +361,8 @@ FIELDSET UL LI {
 }
 
 FOOTER {
-	background-color: #f2f2f2;
-    border-top: 2px solid #808080;
+	background-color: #badbab;
+    border-top: 2px solid #5f9654;
     font-size: 0.75em;
     margin-top: 40px;
 	padding: 10px 0 10px 0;
@@ -366,16 +371,7 @@ FOOTER {
 
 FOOTER,
 FOOTER A {
-	color: #666;
-	display: block;
-	float: left;
-	font-weight: normal;
-	margin-right: -1px;
-	min-width: 20px;
-	padding: 2px;
-	text-align: center;
-	width: auto;
-	z-index: 2;
+	color: #4d4d4d;
 }
 
 FOOTER,
@@ -387,10 +383,6 @@ NAV {
 
 FOOTER P {
     margin-bottom: 4px;
-}
-
-FOOTER P + P {
-	font-size: 0.90em;
 }
 
 FOOTER SECTION + SECTION + SECTION {
@@ -410,6 +402,7 @@ FORM {
 }
 
 H1 {
+	border-top: 4px solid #5f9654;
     font-size: 1.50em;
 }
 
@@ -464,6 +457,14 @@ H2 SPAN + SPAN {
 	margin-left: 0;
 }
 
+H2,
+H3,
+H4,
+H5,
+H6 {
+	border-top: solid 4px #badbab;
+}
+
 H3,
 H4,
 H5,
@@ -473,9 +474,10 @@ H6 {
 }
 
 HEADER {
-	background: #666;
+	background: #5f9654;
+    border-bottom: solid 4px #badbab;
 	color: #fff;
-	margin-bottom: 20px;
+	height: 80px;
 	padding: 4px 10px 4px 10px;
 }
 
@@ -485,36 +487,19 @@ HEADER H1 {
     font-size: 4.00em !important;
 	margin: -12px 0 0 0 !important;
 	padding: 0;
-    text-shadow: 0 2px 3px #000;
-}
-
-HEADER H1 SPAN {
-	font-size: 0.25em;
-    margin-left: -10px;
-}
-
-HEADER H1 SPAN,
-HEADER P {
-    color: #ccc;
-    float: none;
-    font-family: 'Roboto';
     text-shadow: 0 2px 3px #333;
 }
 
-HEADER IMG {
-     float: left;
-     padding-right: 10px;
-}
-
-HEADER P {
-    font-size: 1.25em;
-    left: 110px;
-    position: absolute;
-    top: 70px;
+HEADER H1 SPAN {
+    color: #e6e6e6;
+    float: none;
+	font-size: 0.25em;
+    margin-left: -10px;
+    text-shadow: 0 2px 3px #333;
 }
 
 HTML {
-	background-color: #efefef;
+	background-color: #f2f2f2;
 }
 
 IMG {
@@ -547,24 +532,11 @@ NAV {
     padding-top: 6px;
 }
 
-NAV SPAN I {
-	margin-left: 10px;
-    text-decoration: none;
-}
-
 NAV SPAN {
 	float: right;
     font-family: 'Helvetica', 'Verdana', sans-serif;
     padding-right: 20px;
 	text-align: right;
-}
-
-NAV SPAN SPAN {
-    color: #666;
-    float: none;
-    font-size: 0.85em;
-    margin-left: 4px;
-    margin-right: -20px;
 }
 
 NAV UL {
@@ -797,6 +769,14 @@ TABLE THEAD {
 	color: #999;
 }
 
+
+/* The following is used to style FontAwesome (http://fortawesome.github.io/) elements. */
+.fa-check-circle-o {
+	color: #65b045;
+}
+
+
+/* The following is used to style the jQuery Date Picker (http://jqueryui.com/datepicker/). */
 .ui-datepicker {
     background-color: #fff;
     border: 1px solid #999;
@@ -950,19 +930,11 @@ TABLE THEAD {
 		width: 44.791666666%;
 	}
 
-    .columns.two.offset SECTION FIELDSET INPUT[type=text],
-    .columns.two.offset SECTION FIELDSET SELECT,
-    .columns.two.offset SECTION FIELDSET SELECT.large {
-	    width: 410px;
-    }
-
-    .columns.two.offset SECTION FIELDSET INPUT[type=text].medium,
-    .columns.two.offset SECTION FIELDSET TEXTAREA.medium {
+    .columns.two.offset SECTION FIELDSET INPUT[type=text].medium {
         width: 200px;
     }
 
-    .columns.two.offset SECTION FIELDSET INPUT[type=text].small,
-    .columns.two.offset SECTION FIELDSET TEXTAREA.small {
+    .columns.two.offset SECTION FIELDSET INPUT[type=text].small {
         width: 100px;
     }
 
@@ -1023,10 +995,6 @@ TABLE THEAD {
 		width: 85.41666666666667%;
 	}
 
-	H1 I {
-		font-size: 1.50em;
-	}
-
     HTML {
 		-webkit-text-size-adjust: 100%;
 	}
@@ -1048,7 +1016,7 @@ TABLE THEAD {
 		width: 95.833333333%;
 	}
 	
-	.hidden-tablet {
+	.hidden-phone {
 		display: none;
 	}
 	
@@ -1121,7 +1089,8 @@ TABLE THEAD {
 		width: 300px;
 	}
 	
-	.hidden-phone {
+	.hidden-phone,
+	.hidden-phone-portrait {
 		display: none;
 	}
 	
