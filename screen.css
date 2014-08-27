@@ -67,6 +67,9 @@ BODY {
 }
 
 BODY,
+DL,
+FIELDSET,
+FIELDSET LI,
 FOOTER,
 HEADER,
 HTML,
@@ -79,7 +82,6 @@ BODY,
 FIELDSET INPUT[type=email],
 FIELDSET INPUT[type=file],
 FIELDSET INPUT[type=password],
-FIELDSET INPUT[type=search],
 FIELDSET INPUT[type=text],
 FIELDSET SELECT,
 FIELDSET TEXTAREA {
@@ -120,6 +122,62 @@ INPUT[type=submit] {
     width: auto;
 }
 
+.hidden {
+	display: none;
+}
+
+DL {
+    margin-top: 10px;
+}
+
+DL DD,
+DL DT {
+    display: block;
+    margin-bottom: 10px;
+}
+
+DL DD {
+    margin-left: 140px;
+}
+
+DL DD + DD {
+    margin-top: -10px;
+}
+
+DL DT {
+    color: #666;
+    float: left;
+    font-size: 0.90em;
+    font-weight: bold;
+    padding-top: 2px;
+    width: 140px;
+}
+
+EM {
+	font-weight: bold;
+}
+
+FIELDSET {
+    padding-bottom: 10px;
+}
+
+FIELDSET + FIELDSET {
+    margin-top: 10px;
+}
+
+FIELDSET + FIELDSET LEGEND {
+	border-top: 4px solid #ccc;	
+    display: block !important;
+}
+
+FIELDSET + FIELDSET LEGEND I {
+    cursor: pointer;
+}
+
+FIELDSET + FIELDSET OL {
+    display: none;
+}
+
 FIELDSET INPUT[disabled],
 FIELDSET SELECT[disabled],
 FIELDSET TEXTAREA[disabled],
@@ -140,7 +198,6 @@ FIELDSET INPUT[type=radio] {
 FIELDSET INPUT[type=email],
 FIELDSET INPUT[type=file],
 FIELDSET INPUT[type=password],
-FIELDSET INPUT[type=search],
 FIELDSET INPUT[type=text],
 FIELDSET SELECT,
 FIELDSET TEXTAREA {
@@ -156,7 +213,6 @@ FIELDSET TEXTAREA {
 FIELDSET INPUT[type=email]:focus,
 FIELDSET INPUT[type=file]:focus,
 FIELDSET INPUT[type=password]:focus,
-FIELDSET INPUT[type=search]:focus,
 FIELDSET INPUT[type=text]:focus,
 FIELDSET SELECT:focus,
 FIELDSET TEXTAREA:focus {
@@ -190,17 +246,27 @@ FIELDSET TEXTAREA.small {
     width: 100px;
 }
 
-FIELDSET INPUT[type=text].x-small {
-    width: 60px;
+FIELDSET INPUT[type=text] {
+    -webkit-appearance: none;
+}
+
+FIELDSET INPUT[type=text].large,
+FIELDSET TEXTAREA.large,
+FIELDSET UL.large {
+    width: 600px;
 }
 
 FIELDSET LABEL {
     display: block;
 }
 
-FIELDSET LABEL SPAN {
-	color: #999;
-	font-size: 0.90em;
+FIELDSET LEGEND {
+    color: #333;
+    display: none;
+    font-size: 1.25em;
+    margin-top: 20px;
+    padding: 4px 0 10px 0;
+    width: 100%;
 }
 
 FIELDSET LABEL SPAN.required {
@@ -209,9 +275,16 @@ FIELDSET LABEL SPAN.required {
 	padding-left: 4px;
 }
 
-FIELDSET LI {
+FIELDSET LI,
+.roll-call-last {
     margin-bottom: 10px;
-    position: relative;
+}
+
+FIELDSET LI P {
+	color: #999;
+	font-size: 0.90em;
+	margin: 4px 0;
+	padding: 0;
 }
 
 FIELDSET OL,
@@ -222,7 +295,18 @@ FIELDSET UL {
 }
 
 FIELDSET OL {
-	padding: 0 !important;
+    padding: 0 !important;
+}
+
+FIELDSET OL LI, 
+FIELDSET OL LI OL {
+	clear: both;
+}
+
+FIELDSET OL LI OL LI {
+    clear: none;
+    float: left;
+    width: 33.3333%;
 }
 
 FIELDSET P {
@@ -246,6 +330,13 @@ FIELDSET SELECT.small {
 	width: 110px;
 }
 
+FIELDSET SPAN {
+	border-left: 2px solid #b3b3b3;
+    color: #808080;
+	font-size: 0.90em;
+    padding-left: 4px;
+}
+
 FIELDSET TEXTAREA {
     height: 100px;
 }
@@ -254,7 +345,7 @@ FIELDSET UL {
 	border-bottom: 1px solid #999;
 	border-left: 1px solid #999;
 	border-right: 1px solid #999;
-	max-height: 200px;
+	max-height: 160px;
 	overflow-y: scroll;
 	padding: 0 !important;
 	width: 408px;
@@ -264,8 +355,17 @@ FIELDSET UL LI {
 	margin-bottom: 0;
 }
 
-FIELDSET .prepend {
-	bottom: 0;
+FOOTER {
+	background-color: #f2f2f2;
+    border-top: 2px solid #808080;
+    font-size: 0.75em;
+    margin-top: 40px;
+	padding: 10px 0 10px 0;
+	width: 100%;
+}
+
+FOOTER,
+FOOTER A {
 	color: #666;
 	display: block;
 	float: left;
@@ -278,35 +378,35 @@ FIELDSET .prepend {
 	z-index: 2;
 }
 
-FIELDSET .prepend + INPUT[type=text] {
-	width: 376px;
-}
-
-FIELDSET .prepend + INPUT[type=text].large {
-	width: 576px;
-}
-
-FIELDSET .prepend + INPUT[type=text].medium {
-	width: 176px;
-}
-
-FIELDSET .prepend + INPUT[type=text].small {
-	width: 76px;
-}
-
-FOOTER {
-	background-color: #ccc;
-	color: #999;
-    font-size: 0.75em;
-    margin-top: 20px;
-	padding: 10px 0 10px 0;
-	text-align: center;
-}
-
 FOOTER,
-HEADER {
+HEADER,
+NAV {
     clear: both;
     overflow: hidden;
+}
+
+FOOTER P {
+    margin-bottom: 4px;
+}
+
+FOOTER P + P {
+	font-size: 0.90em;
+}
+
+FOOTER SECTION + SECTION + SECTION {
+    min-height: 110px;
+}
+
+FOOTER SPAN {
+	display: block;
+}
+
+FOOTER .columns {
+	margin: 0 !important;
+}
+
+FORM {
+    min-height: 200px;
 }
 
 H1 {
@@ -320,11 +420,48 @@ H4,
 H5,
 H6 {
     color: #000;
-    margin-bottom: 10px;
+}
+
+H1 + H2 {
+    margin-top: -10px;
+}
+
+H1 + H2 {
+    border-top: 0 !important;
+    color: #666;
+}
+
+H1 + H2 + TABLE {
+    margin-bottom: 40px;
+}
+
+H1 SPAN,
+H2 SMALL,
+H2 SPAN {
+	color: #999;
+	font-size: 0.75em; 
+}
+
+H1 SPAN,
+H2 SPAN {
+    float: right; 
+	margin-left: 10px;
+}
+
+H1 SPAN A,
+H2 SPAN A,
+H2 SPAN I A {
+	color: #666 !important;
 }
 
 H2 {
     font-size: 1.25em;
+    margin-bottom: 4px;
+    padding-top: 4px;
+}
+
+H2 SPAN + SPAN {
+	margin-left: 0;
 }
 
 H3,
@@ -342,26 +479,38 @@ HEADER {
 	padding: 4px 10px 4px 10px;
 }
 
-HEADER A,
-HEADER H1,
-HEADER LI {
-	color: #fff;	
-}
-
 HEADER H1 {
-	float: left;
-	margin-bottom: 2px;
-	padding-right: 30px;
+	border: 0 !important;
+    color: #fff;
+    font-size: 4.00em !important;
+	margin: -12px 0 0 0 !important;
+	padding: 0;
+    text-shadow: 0 2px 3px #000;
 }
 
-HEADER NAV A {
-	text-decoration: none;
+HEADER H1 SPAN {
+	font-size: 0.25em;
+    margin-left: -10px;
 }
 
-HEADER NAV OL LI {
-	float: left;
-	padding: 8px 0 0 2px;
-	width: 100px;
+HEADER H1 SPAN,
+HEADER P {
+    color: #ccc;
+    float: none;
+    font-family: 'Roboto';
+    text-shadow: 0 2px 3px #333;
+}
+
+HEADER IMG {
+     float: left;
+     padding-right: 10px;
+}
+
+HEADER P {
+    font-size: 1.25em;
+    left: 110px;
+    position: absolute;
+    top: 70px;
 }
 
 HTML {
@@ -387,12 +536,52 @@ INPUT[type=submit] {
     color: #333;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dadada', GradientType=0);
     font-weight: bold;
+	margin-right: 20px;
 }
 
-NAV OL,
+NAV {
+    background-color: #e6e6e6;
+	margin-bottom: 20px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-top: 6px;
+}
+
+NAV SPAN I {
+	margin-left: 10px;
+    text-decoration: none;
+}
+
+NAV SPAN {
+	float: right;
+    font-family: 'Helvetica', 'Verdana', sans-serif;
+    padding-right: 20px;
+	text-align: right;
+}
+
+NAV SPAN SPAN {
+    color: #666;
+    float: none;
+    font-size: 0.85em;
+    margin-left: 4px;
+    margin-right: -20px;
+}
+
 NAV UL {
-	list-style: none;
-	margin: 0 !important;
+    list-style: none;
+}
+
+NAV UL LI {
+    float: left;
+    margin-right: 10px;
+    width: auto;
+}
+
+NAV.floating {
+    background-color: #ccc;
+    border-bottom: 2px solid #999;
+    display: none;
+    position: absolute;
 }
 
 OL,
@@ -402,6 +591,10 @@ UL {
 
 P {
     margin-bottom: 10px;
+}
+
+P + H2 {
+    margin-top: 40px;
 }
 
 TABLE {
@@ -419,13 +612,14 @@ TABLE TBODY TR:hover TD {
 	background-color: #f5f5f5;
 }
 
-TABLE TFOOT {
-	border-bottom: solid 2px #ddd;
-	border-top: solid 2px #ddd;
+TABLE TD {
+	vertical-align: top;
 }
 
-TABLE THEAD {
-	cursor: pointer;
+TABLE TFOOT TD {
+    border-top: solid 2px #ccc;
+    color: #333;
+    font-weight: bold;
 }
 
 TABLE TD,
@@ -433,12 +627,26 @@ TABLE TH {
 	border-bottom: 1px solid #ddd;
 	padding: 4px;
 	position: relative;
-	vertical-align: top;
+}
+
+TABLE TD SPAN,
+TABLE TD SPAN A {
+    color: #666;
+    font-size: 0.90em;
+    margin-left: 10px;
 }
 
 TABLE TH {
 	border-bottom-width: 2px;
+	border-top: 3px solid #e6e6e6;
+	color: #333;
+	font-size: 0.90em;
 	font-weight: normal;
+	vertical-align: bottom;
+}
+
+TABLE THEAD {
+	cursor: pointer;
 }
 
 .columns {
@@ -446,14 +654,210 @@ TABLE TH {
 	overflow: hidden;
 }
 
+.columns + .columns,
+.columns SECTION + SECTION {
+	margin-top: 40px;
+}
+
 .columns SECTION H1 {
-	border-bottom: #666 solid 1px;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
 }
 
 .columns.three SECTION,
 .columns.two SECTION {
 	float: left;
+    margin-bottom: 20px;
 }
+
+.columns.three SECTION + SECTION,
+.columns.two SECTION + SECTION {
+	margin-top: 0;
+}
+
+.columns.two SECTION + SECTION + SECTION {
+    padding-top: 40px;
+}
+
+.form-drop-down {
+    background-color: #fff; 
+    position: absolute; 
+    z-index: 200;
+}
+
+.form-drop-down LI {
+    cursor: pointer; 
+    padding: 10px;
+}
+
+.form-drop-down LI SPAN {
+    display: none;
+}
+
+.menu-drop-down {
+	background-color: #fff; 
+	border-bottom: 3px solid #b3b3b3; 
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc; 
+	display: none; 
+	font-size: 0.98em !important;
+	padding: 14px 6px 4px 6px; 
+	position: absolute; 
+    width: 180px;
+	z-index: 1000;
+}
+
+.menu-drop-down A {
+	color: #666;
+    display: block;
+    text-decoration: none;
+}
+
+.menu-drop-down I {
+    margin-right: 10px;
+}
+
+.menu-drop-down P {
+	font-size: 0.80em;
+	margin: 10px 0 0 0;
+	min-width: 160px;
+}
+
+.menu-drop-down UL {
+	list-style: none; 
+	margin: 0 !important;
+}
+
+.menu-drop-down UL LI + LI {
+    margin-top: 10px;
+}
+
+.menu-drop-down UL LI.menu-break {
+    border-top: 2px solid #e6e6e6;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.message {
+	color: #666;
+	font-size: 0.90em;
+}
+
+.message-error,
+.message-success {
+	background-color: #fff;
+    padding: 10px;
+}
+
+.message-error {
+	border: 1px solid #db4437;
+	border-left-width: 2px;
+	color: #d3362d;
+	display: none;
+}
+
+.message-error.floating,
+.message-success {
+	position: absolute;
+	right: 20px;
+	top: 50px;
+	z-index: 100;
+}
+
+.message-success {
+	border: 1px solid #65b045;
+	border-left-width: 2px;
+	color: #5f9654;
+}
+
+.modal {
+    background-color: #fff; 
+    border-bottom: 2px solid #ccc; 
+    overflow-y: scroll;
+    padding-bottom: 20px; 
+    padding-top: 20px; 
+    position: absolute; 
+    top: 130px; 
+    width: 100%;
+    z-index: 300; 
+}
+
+.modal FIELDSET {
+    position: absolute; 
+    right: 30px; 
+    top: 10px;
+}
+
+.not-active {
+	text-decoration: line-through;
+}
+
+.not-active,
+.not-active A {
+	color: #999;
+}
+
+.ui-datepicker {
+    background-color: #fff;
+    border: 1px solid #999;
+    display: none;
+    padding: 4px;
+    width: 17em;
+}
+
+.ui-datepicker A {
+    text-decoration: none;
+}
+
+.ui-datepicker TBODY TD {
+    border-bottom: solid 1px #ccc;
+    text-align: right;
+}
+
+.ui-datepicker THEAD TH {
+    background-color: #e6e6e6;
+    border-bottom: solid 2px #999;
+    border-top: 0;
+    color: #666;
+}
+
+.ui-datepicker-calendar .ui-datepicker-current-day {
+    background-color: #ccc;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    background-color: #666;
+    color: #fff;
+    font-weight: bold;
+    padding: 4px 0 4px 0;
+}
+
+.ui-datepicker .ui-datepicker-next {  
+    float: right;
+    margin-right: 10px;
+}
+
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev {
+    color: #fff;
+    cursor: pointer;
+}
+
+.ui-datepicker .ui-datepicker-prev {  
+    float: left;
+    margin-left: 10px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-today {
+    background-color: #e6e6e6;
+}
+
+
+
 
 @media ( min-width: 1024px ) {
 
@@ -466,7 +870,7 @@ TABLE TH {
 	}
 	
 	TH.medium {
-		width: 8.1300813%;
+		width: 11.178861788%;
 	}
 	
 	TH.small {
@@ -498,36 +902,20 @@ TABLE TH {
 	.hidden-desktop {
 		display: none;
 	}
-
+	
+	.message-error.floating,
+	.message-success.floating {
+		position: absolute;
+		right: 1.953125%;
+		top: 50px;
+	}
+	
 }
 
 @media ( min-width: 768px ) and ( max-width: 979px ) {
 
 	BODY {
-		width: 768px;
-	}
-	
-	FIELDSET INPUT[type=email],
-	FIELDSET INPUT[type=email].large,
-	FIELDSET INPUT[type=email].medium,
-	FIELDSET INPUT[type=file],
-	FIELDSET INPUT[type=password],
-	FIELDSET INPUT[type=password].large,
-	FIELDSET INPUT[type=password].medium,
-	FIELDSET INPUT[type=search],
-	FIELDSET INPUT[type=search].large,
-	FIELDSET INPUT[type=search].medium,
-	FIELDSET INPUT[type=text],
-	FIELDSET INPUT[type=text].large,
-	FIELDSET INPUT[type=text].medium,
-	FIELDSET TEXTAREA,
-	FIELDSET TEXTAREA.large,
-	FIELDSET TEXTAREA.medium,
-	FIELDSET UL,
-	FIELDSET UL.large,
-	FIELDSET UL.medium,
-	.columns SECTION {
-	    width: 94.791666666%;
+		width: 100%;
 	}
 	
 	TH.large {
@@ -547,11 +935,59 @@ TABLE TH {
 		margin: 0 2.604166666% 0 2.604166666%;
 	}
 
+    .columns SECTION,
+    .columns.two SECTION FIELDSET INPUT[type=text],
+    .columns.two SECTION FIELDSET SELECT,
+    .columns.two SECTION FIELDSET TEXTAREA, 
+    .columns.two.offset SECTION {
+		width: 94.791666666%;
+	}
+
 	.columns.three SECTION,
 	.columns.two SECTION,
 	.columns.two.offset SECTION,
 	.columns.two.offset SECTION + SECTION {
 		width: 44.791666666%;
+	}
+
+    .columns.two.offset SECTION FIELDSET INPUT[type=text],
+    .columns.two.offset SECTION FIELDSET SELECT,
+    .columns.two.offset SECTION FIELDSET SELECT.large {
+	    width: 410px;
+    }
+
+    .columns.two.offset SECTION FIELDSET INPUT[type=text].medium,
+    .columns.two.offset SECTION FIELDSET TEXTAREA.medium {
+        width: 200px;
+    }
+
+    .columns.two.offset SECTION FIELDSET INPUT[type=text].small,
+    .columns.two.offset SECTION FIELDSET TEXTAREA.small {
+        width: 100px;
+    }
+
+    .columns.two.offset SECTION FIELDSET SELECT.medium {
+	    width: 210px;
+    }
+
+    .columns.two.offset SECTION FIELDSET SELECT.small {
+	    width: 110px;
+    }
+
+    FOOTER .columns SECTION,
+    FOOTER .columns SECTION + SECTION {
+        clear: left;
+    }
+
+    FOOTER .columns SECTION + SECTION + SECTION {
+        clear: none;
+    }
+	
+	.message-error.floating,
+	.message-success.floating {
+		position: absolute;
+		right: 2.604166666%;
+		top: 50px;
 	}
 
 }
@@ -570,9 +1006,6 @@ TABLE TH {
 	FIELDSET INPUT[type=password],
 	FIELDSET INPUT[type=password].large,
 	FIELDSET INPUT[type=password].medium,
-	FIELDSET INPUT[type=search],
-	FIELDSET INPUT[type=search].large,
-	FIELDSET INPUT[type=search].medium,
 	FIELDSET INPUT[type=text],
 	FIELDSET INPUT[type=text].large,
 	FIELDSET INPUT[type=text].medium,
@@ -582,6 +1015,7 @@ TABLE TH {
 	FIELDSET UL,
 	FIELDSET UL.large,
 	FIELDSET UL.medium {
+        height: 30px;
 		width: 83.33333333333333%;
 	}
 
@@ -589,13 +1023,21 @@ TABLE TH {
 		width: 85.41666666666667%;
 	}
 
-	FIELDSET .prepend + INPUT[type=text].large {
-		width: 78.33333333333333%;
+	H1 I {
+		font-size: 1.50em;
+	}
+
+    HTML {
+		-webkit-text-size-adjust: 100%;
 	}
 
 	.columns H1,
 	.columns SECTION {
 		margin: 0 2.083333333% 0 2.083333333%;
+	}
+
+	.columns SECTION {
+		margin-bottom: 30px;
 	}
 
 	.columns.three SECTION,
@@ -604,6 +1046,17 @@ TABLE TH {
 	.columns.two.offset SECTION + SECTION {
 		float: none;
 		width: 95.833333333%;
+	}
+	
+	.hidden-tablet {
+		display: none;
+	}
+	
+	.message-error.floating,
+	.message-success.floating {
+		position: absolute;
+		right: 2.083333333%;
+		top: 50px;
 	}
 
 }
@@ -619,14 +1072,13 @@ TABLE TH {
 	FIELDSET INPUT[type=file],
 	FIELDSET INPUT[type=password],
 	FIELDSET INPUT[type=password].large,
-	FIELDSET INPUT[type=search],
-	FIELDSET INPUT[type=search].large,
 	FIELDSET INPUT[type=text],
 	FIELDSET INPUT[type=text].large,
 	FIELDSET TEXTAREA,
 	FIELDSET TEXTAREA.large,
 	FIELDSET UL,
 	FIELDSET UL.large {
+        width: 30px;
 		width: 200px;
 	}
 
@@ -635,14 +1087,9 @@ TABLE TH {
 		width: 210px;
 	}
 
-	FIELDSET .prepend + INPUT[type=text],
-	FIELDSET .prepend + INPUT[type=text].large {
-		width: 176px;
-	}
-	
-	H1,
-	H1 SPAN {
-		font-size: 1.10em;
+	FIELDSET TEXTAREA,
+	FIELDSET TEXTAREA.large {
+		height: 100px;
 	}
 	
 	TH.large {
@@ -662,12 +1109,27 @@ TABLE TH {
 		margin: 0 10px 0 10px;
 	}
 
+	.columns SECTION {
+		margin-bottom: 30px;
+	}
+
 	.columns.three SECTION,
 	.columns.two SECTION,
 	.columns.two.offset SECTION,
 	.columns.two.offset SECTION + SECTION {
 		float: none;
 		width: 300px;
+	}
+	
+	.hidden-phone {
+		display: none;
+	}
+	
+	.message-error.floating,
+	.message-success.floating {
+		position: absolute;
+		right: 10px;
+		top: 50px;
 	}
 
 }
