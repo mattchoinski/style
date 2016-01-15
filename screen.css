@@ -75,19 +75,92 @@ section {
 	display: block;
 }
 
+body {
+	line-height: 1;
+}
+
+body,
+dl,
+fieldset,
+footer,
+header,
+html,
+nav,
+section {
+	position: relative;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	background: none;
+	border: none;
+	font-size: 0.90em;
+}
+
+footer,
+footer a {
+	color: #616161;
+}
+
+footer,
+header,
+main {
+	clear: both;
+}
+
+footer,
+header,
+main,
+section {
+	overflow: hidden;
+}
+
+header {
+	background-color: #efefef;
+	position: relative;
+}
+
+header nav {
+	position: absolute;
+	top: 4px;
+}
+
+header nav a {
+	text-decoration: none;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li + li {
+	margin-left: 20px;
+}
+
 img,
 svg {
 	vertical-align: middle;
 }
 
-body {
-	line-height: 1;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+	background-color: #eee;
+	cursor: not-allowed;
 }
 
 ol,
