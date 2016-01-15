@@ -76,7 +76,9 @@ section {
 }
 
 body {
+	background-color: #fff;
 	line-height: 1;
+	margin: 0 auto;
 }
 
 body,
@@ -88,6 +90,30 @@ html,
 nav,
 section {
 	position: relative;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+    background-color: #efefef;
+    background-repeat: no-repeat;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #bbb;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.00em;
+    height: auto;
+    line-height: normal;
+    padding: 8px 14px 8px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    transition: 0.1s linear all;
+    width: auto;
 }
 
 fieldset {
@@ -120,6 +146,26 @@ section {
 	overflow: hidden;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 1.50em;
+}
+
+h1 span,
+h2 span {
+	float: right;
+}
+
+h2,
+section h1 {
+	border-top: 1px solid #e0e0e0;
+	padding-top: 4px;
+}
+
 header {
 	background-color: #efefef;
 	position: relative;
@@ -148,6 +194,10 @@ header nav ul li + li {
 	margin-left: 20px;
 }
 
+html {
+	background-color: #ccc;
+}
+
 img,
 svg {
 	vertical-align: middle;
@@ -171,6 +221,11 @@ ul {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.columns.three section,
+.columns.two section {
+	float: left;
 }
 
 @media ( min-width: 1026px ) {
