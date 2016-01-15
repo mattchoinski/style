@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 				}
 			},
 			watch: {
-				files: ["*.css"],
+				files: ["*.css", "!*.min.css"],
 				tasks: ["cssmin"]
 			}
 		}
