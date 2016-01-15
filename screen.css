@@ -199,9 +199,9 @@ h2 span {
 	float: right;
 }
 
-h2,
-section h1 {
-	border-top: 1px solid #e0e0e0;
+h1,
+h2 {
+	border-top: 2px solid #e0e0e0;
 	padding-top: 4px;
 }
 
