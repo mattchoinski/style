@@ -1,3 +1,35 @@
+/*
+Start: The following are stylings for the sample pages.		
+ */
+footer {
+	border-top: 2px solid #e8f5e9 !important;
+	color: #81c784;
+}
+
+h1, 
+h2 {
+	border-top: 2px solid #e8f5e9 !important;
+	color: #4caf50;
+}
+
+header {
+	background-color: #fff !important;
+	border-bottom: solid 4px #c8e6c9 !important;
+	color: #4caf50;
+}
+
+header h1 {
+	border: 0 !important;
+}
+
+html {
+	background-color: #f2f2f2 !important;
+}
+/* 
+End
+ */
+
+
 a,
 abbr,
 acronym,
@@ -73,6 +105,10 @@ main,
 nav,
 section {
 	display: block;
+}
+
+a {
+	color: #333;
 }
 
 body {
@@ -190,22 +226,30 @@ h4,
 h5,
 h6 {
 	font-size: 1.50em;
+	padding-bottom: 1.953125%;
 }
 
 h1 span,
 h2 span {
 	float: right;
+	font-size: 0.85rem;
 }
 
 h1,
 h2 {
 	border-top: 2px solid #e0e0e0;
-	padding-top: 4px;
+	padding-top: 0.9765625%;
 }
 
 header {
 	background-color: #efefef;
 	position: relative;
+}
+
+header h1,
+header h2 {
+	border: 0;
+	padding-bottom: 0;
 }
 
 header nav {
@@ -299,6 +343,11 @@ ul {
 	list-style: none;
 }
 
+p {
+	padding-bottom: 2.9296875%;
+	line-height: 1.5rem;
+}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -376,6 +425,10 @@ textarea {
 	fieldset {
 	    padding-bottom: 0.9765625%;
 	}
+	
+	footer {
+		padding-top: 3.90625% !important;
+	}
 
 	footer,
 	h1,
@@ -392,12 +445,7 @@ textarea {
 	header,
 	section {
 		width: 98.046875%
-	}
-
-	footer,
-	section {
-		margin-top: 3.90625% !important;
-	}
+	}	
 
 	h1 span,
 	h2 span {
@@ -435,8 +483,7 @@ textarea {
 	}
 
 	section {
-		margin-left: 0.9765625%;
-		margin-right: 0.9765625%;
+		margin: 3.90625% 0.9765625% 0 0.9765625%;
 	}
 
 	select {
@@ -554,7 +601,7 @@ textarea {
 
 }
 
-@media (min-width: 320px ) and ( max-width: 767px ) { /* 736 target */
+@media ( min-width: 320px ) and ( max-width: 767px ) { /* 736 target */
 
 	body {
 		width: 100%;
@@ -583,50 +630,3 @@ textarea {
 	}
 
 }
-
-/* http://kushagragour.in/lab/hint/
-<a href="javascript:void(0)" data-hint="bottom-left" class="hint--bottom-left">bottom-left</a>
-[data-hint] {
-  position: relative;
-  display: inline-block;
- }
-  [data-hint]:before, [data-hint]:after {
-    position: absolute;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    visibility: hidden;
-    opacity: 0;
-    z-index: 1000000;
-    pointer-events: none;
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    transition: 0.3s ease;
-    -webkit-transition-delay: 0ms;
-    -moz-transition-delay: 0ms;
-    transition-delay: 0ms; }
-  [data-hint]:hover:before, [data-hint]:hover:after {
-    visibility: visible;
-    opacity: 1; }
-  [data-hint]:hover:before, [data-hint]:hover:after {
-    -webkit-transition-delay: 100ms;
-    -moz-transition-delay: 100ms;
-    transition-delay: 100ms; }
-  [data-hint]:before {
-    content: '';
-    position: absolute;
-    background: transparent;
-    border: 6px solid transparent;
-    z-index: 1000001; }
-  [data-hint]:after {
-    content: attr(data-hint);
-    background: #383838;
-    color: white;
-    padding: 8px 10px;
-    font-size: 12px;
-    line-height: 12px;
-    white-space: nowrap; }
-
-[data-hint='']:before, [data-hint='']:after {
-  display: none !important; }
- */
