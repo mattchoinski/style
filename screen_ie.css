@@ -1,21 +1,21 @@
-BODY {
+body {
 	width: 1024px;
 }
 
-.columns SECTION {
+.columns section {
 	margin: 0 1.953125% 0 1.953125%;
 	width: 96.09375%;
 }
 
-.columns.three SECTION,
-.columns.two.offset SECTION + SECTION {
+.columns.three section,
+.columns.two.offset section + section {
 	width: 29.427083333%;
 }
 
-.columns.two SECTION {
+.columns.two section {
 	width: 46.09375%;
 }
 	
-.columns.two.offset SECTION {
+.columns.two.offset section {
 	width: 62.76041666666667%;
 }
