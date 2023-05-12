@@ -5,14 +5,8 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="screen.min.css" rel="stylesheet" type="text/css" />
-        <!--[if lt IE 9]>
-        <link href="screen_ie.min.css" rel="stylesheet" type="text/css" />
-        <![endif]-->
+        <link href="screen.css" rel="stylesheet" type="text/css" />
         <title>style.choinski.net</title>
-     	<!--[if lt IE 9]>
-        <script src="html5shim.min.js"></script>
-        <![endif]-->
     </head>
     <body>
 		<svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -25,57 +19,69 @@
 		<header>
 		    <h1>style<b class="hidden-phone-portrait">.choinski.net</b></h1>
 		</header>
+		<main class="columns two">
+			<article><section><h1>Two</h1><p>Test</p></section><section><h2>Sub</h2><p>sub</p></section></article>
+			<article><section><h1>Two</h1><p>Test</p></section></article>
+		</main>
 		<div class="columns three">
-			<section>
-				<h1>Welcome</h1>
-				<p>This page has been styled by a responsive style sheet, which was inspired by <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>.</p>
-				<p>This <a href="https://github.com/mattchoinski/style/blob/master/screen.css" target="_blank">responsive style sheet</a>, along with the related <a href="https://github.com/mattchoinski/style/blob/master/sample.html" target="_blank">HTML document structure</a>, provides a simpler way to quickly and effectively create front-ends for web applications.</p>
-			</section>
-			<section>
-				<h2>Responsive Layouts</h2>
-				<p>This <a href="https://github.com/mattchoinski/style" target="_blank">responsive style sheet</a> can display up to three (3) columns that automatically arrange themselves based on the type and orientation of a device.</p>
-				<p>There is a two (2) column layout with an offset: with the appropriate viewport size, this will display the first column wider than the second column.</p>
-			</section>
-			<section>
-				<h2>Features</h2>
-				<table>
-					<tbody>
-						<tr>
-							<td class="small"><svg class="icon"><use xlink:href="#icon-check-circle"></use></svg></td>
-							<td>Responsive Layouts</td>
-						</tr>
-						<tr>
-							<td class="small"><svg class="icon"><use xlink:href="#icon-check-circle"></use></svg></td>
-							<td>Mobile Ready</td>
-						</tr>
-						<tr>
-							<td class="small"><svg class="icon"><use xlink:href="#icon-check-circle"></use></svg></td>
-							<td>Open Source</td>
-						</tr>
-					</tbody>
-				</table>
-			</section>
+			<article>
+				<section>
+					<h1>Welcome</h1>
+					<p>This page has been styled by a responsive style sheet, which was inspired by <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>.</p>
+					<p>This <a href="https://github.com/mattchoinski/style/blob/master/screen.css" target="_blank">responsive style sheet</a>, along with the related <a href="https://github.com/mattchoinski/style/blob/master/sample.html" target="_blank">HTML document structure</a>, provides a simpler way to quickly and effectively create front-ends for web applications.</p>
+				</section>
+			</article>
+			<article>
+				<section>
+					<h2>Responsive Layouts</h2>
+					<p>This <a href="https://github.com/mattchoinski/style" target="_blank">responsive style sheet</a> can display up to three (3) columns that automatically arrange themselves based on the type and orientation of a device.</p>
+					<p>There is a two (2) column layout with an offset: with the appropriate viewport size, this will display the first column wider than the second column.</p>
+				</section>
+			</article>
+			<article>
+				<section>
+					<h2>Features</h2>
+					<table>
+						<tbody>
+							<tr>
+								<!--<td class="small"><svg class="icon"><use xlink:href="#icon-check-circle"></use></svg></td>-->
+								<td>Responsive Layouts</td>
+							</tr>
+							<tr>
+								<!--<td class="small"><svg class="icon"><use xlink:href="#icon-check-circle"></use></svg></td>-->
+								<td>Mobile Ready</td>
+							</tr>
+							<tr>
+								<!--<td class="small"><svg class="icon"><use xlink:href="#icon-check-circle"></use></svg></td>-->
+								<td>Open Source</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</article>
 		</div>
 		<div class="columns two offset">
-			<section>
-				<h2>Sample Form</h2>
-				<form>
-					<fieldset>
-						<ol>
-							<li><label for="nickname">Nickname:</label> <input name="nickname" id="nickname" type="text" /></li>
-							<li>
-								<label for="choice">Yes or No:</label>
-								<select class="small" name="choice" id="choice">
-									<option value="1">Yes</option>
-									<option value="0">No</option>
-								</select>
-							</li>
-							<li><label for="comment">Comments:</label> <textarea class="large" name="comment" id="comment"></textarea></li>
-						</ol>
-						<input type="submit" value="Sample Button" />
-					</fieldset>
-				</form>
-			</section>
+			<article>
+				<section>
+					<h2>Sample Form</h2>
+					<form>
+						<fieldset>
+							<ol>
+								<li><label for="nickname">Nickname</label> <input name="nickname" id="nickname" placeholder="Type here" type="text" /></li>
+								<li>
+									<label for="choice">Yes or No</label>
+									<select class="small" name="choice" id="choice">
+										<option value="1">Yes</option>
+										<option value="0">No</option>
+									</select>
+								</li>
+								<li><label for="comment">Comments</label><p>Here are more instructions.</p> <textarea class="large" name="comment" id="comment"></textarea></li>
+							</ol>
+							<input type="submit" value="Save" />
+						</fieldset>
+					</form>
+				</section>
+			</article>
 		</div>
 		<footer>
 			<div class="columns three">
