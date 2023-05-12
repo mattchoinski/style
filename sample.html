@@ -42,21 +42,46 @@
 				<section>
 					<h2>Features</h2>
 					<table>
+						<thead>
+							<tr>
+								<th>Col Header</th>
+							</tr>
+						</thead>
 						<tbody>
 							<tr>
 								<!--<td class="small"><svg class="icon"><use xlink:href="#icon-check-circle"></use></svg></td>-->
-								<td>Responsive Layouts</td>
+								<td>Row1 Data</td>
 							</tr>
 							<tr>
 								<!--<td class="small"><svg class="icon"><use xlink:href="#icon-check-circle"></use></svg></td>-->
-								<td>Mobile Ready</td>
+								<td>Row2 Data</td>
 							</tr>
 							<tr>
 								<!--<td class="small"><svg class="icon"><use xlink:href="#icon-check-circle"></use></svg></td>-->
-								<td>Open Source</td>
+								<td>Row3 Data</td>
 							</tr>
 						</tbody>
 					</table>
+					<details>
+						<summary>Details Title</summary>
+						These are details of something.
+					</details>
+					<dialog open>
+						<p>Sample dialog!</p>
+						<form method="dialog">
+							<button formmethod="dialog" value="cancel">Close</button>
+						</form>
+					</dialog>
+				</section>
+			</article>
+		</div>
+		<div class="columns">
+			<article>
+				<section>
+					<h1>Lists</h1>
+					<dl>
+						<dt>Title</dt><dd>Data</dd>
+					</dl>
 				</section>
 			</article>
 		</div>
@@ -84,24 +109,21 @@
 			</article>
 		</div>
 		<footer>
-			<div class="columns three">
-				<section>
-					<p>&copy; 2013 Matthew Choinski<br /><a href="http://www.choinski.net/" target="_blank">http://www.choinski.net/</a></p>
-				</section>
-				<section>
-					<p>Resources:</p>
-					<ul>
-						<li><a href="https://github.com/mattchoinski/style" target="_blank">Github Project</a></li>
-						<li><a href="https://github.com/mattchoinski" target="_blank">Other Github Projects</a></li>
-					</ul>
-				</section>
-				<section>
-					<p>Other resources:</p>
-					<ul>
-						<li><a href="http://getbootstrap.com/" target="_blank">Twitter Boostrap</a></li>
-						<li><a href="http://fortawesome.github.io/" target="_blank">Font Awesome</a></li>
-					</ul>
-				</section>
+			<div class="columns two">
+				<article>
+					<section>
+						<p>&copy; 2013 Matthew Choinski<br /><a href="http://www.choinski.net/" target="_blank">http://www.choinski.net/</a></p>
+					</section>
+				</article>
+				<article>
+					<section>
+						<p>Resources:</p>
+						<ul>
+							<li><a href="https://github.com/mattchoinski/style" target="_blank">Github Project</a></li>
+							<li><a href="https://github.com/mattchoinski" target="_blank">Other Github Projects</a></li>
+						</ul>
+					</section>
+				</article>
 			</div>
 		</footer>
     </body>
