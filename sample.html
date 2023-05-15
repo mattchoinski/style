@@ -21,8 +21,38 @@
 		</header>
 		<main class="columns two">
 			<article><section><h1>Two</h1><p>Test</p></section><section><h2>Sub</h2><p>sub</p></section></article>
-			<article><section><h1>Two</h1><p>Test</p></section></article>
+			<article>
+				<section><h1>Two</h1><p>Test</p></section>
+				<section>
+					<details class="section">
+						<summary>Details List</summary>
+						<p>These are details of something.</p>
+					</details>
+				</section>
+				<section>
+					<details class="section">
+						<summary>Details List</summary>
+						<p>These are details of something.</p>
+					</details>
+				</section>
+			</article>
 		</main>
+		<div class="columns center">
+			<article>
+				<section>
+					<h1>Centered</h1>
+					<p>instructions</p>
+					<form>
+						<fieldset>
+							<ol>
+								<li><label>Phone</label> <input type="text" /></li>
+							</ol>
+						</fieldset>
+						<input type="submit" value="Lookup" />
+					</form>
+				</section>
+			</article>
+		</div>
 		<div class="columns three">
 			<article>
 				<section>
@@ -45,33 +75,56 @@
 						<thead>
 							<tr>
 								<th>Col Header</th>
+								<th>Col Header</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<!--<td class="small"><svg class="icon"><use xlink:href="#icon-check-circle"></use></svg></td>-->
 								<td>Row1 Data</td>
+								<td>Row1 Data</td>
 							</tr>
 							<tr>
 								<!--<td class="small"><svg class="icon"><use xlink:href="#icon-check-circle"></use></svg></td>-->
 								<td>Row2 Data</td>
+								<td>Row1 Data</td>
 							</tr>
 							<tr>
 								<!--<td class="small"><svg class="icon"><use xlink:href="#icon-check-circle"></use></svg></td>-->
 								<td>Row3 Data</td>
+								<td>Row1 Data</td>
 							</tr>
 						</tbody>
 					</table>
 					<details>
 						<summary>Details Title</summary>
-						These are details of something.
+						<p>These are details of something.</p>
 					</details>
 					<dialog open>
 						<p>Sample dialog!</p>
 						<form method="dialog">
-							<button formmethod="dialog" value="cancel">Close</button>
+							<button class="cancel" formmethod="dialog" value="cancel">Close</button>
 						</form>
 					</dialog>
+				</section>
+			</article>
+		</div>
+		<div class="columns">
+			<article>
+				<section>
+					<table>
+						<thead>
+							<tr><th class="small">Col1</th><th>Col2</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>1</td><td>2</td></tr>
+							<tr><td>1</td><td>2</td></tr>
+							<tr><td>1</td><td>2</td></tr>
+							<tr><td>1</td><td>2</td></tr>
+							<tr><td>1</td><td>2</td></tr>
+							<tr><td>1</td><td>2</td></tr>
+						</tbody>
+					</table>
 				</section>
 			</article>
 		</div>
@@ -89,6 +142,13 @@
 					<ul>
 						<li>Item</li>
 					</ul>
+					<h2>No List</h2>
+					<ol class="list">
+						<li>Item</li>
+					</ol>
+					<ul class="list">
+						<li>Item</li>
+					</ul>
 				</section>
 			</article>
 		</div>
@@ -99,7 +159,7 @@
 					<form>
 						<fieldset>
 							<ol>
-								<li><label for="nickname">Nickname</label> <input name="nickname" id="nickname" placeholder="Type here" type="text" /></li>
+								<li><label for="nickname">Nickname</label> <input name="nickname" id="nickname" placeholder="Type here" type="text" /><div class="error">Error</div></li>
 								<li>
 									<label for="choice">Yes or No</label>
 									<select class="small" name="choice" id="choice">
@@ -107,19 +167,40 @@
 										<option value="0">No</option>
 									</select>
 								</li>
+								<li>
+									<ol>
+										<li><input type="checkbox" /> Check</li></li>
+										<li><input type="checkbox" /> Check</li></li>
+									</ol>
+								</li>
+								<li>
+									<label>State</label>
+									<select class="medium">
+										<option></option>
+										<option>Maryland</option>
+									</select>
+								</li>
+								<li>
+									<label>Long Options</label>
+									<select class="large">
+										<option></option>
+										<option>Very long, long, option</option>
+									</select>
+								</li>
 								<li><label for="comment">Comments</label><p>Here are more instructions.</p> <textarea class="large" name="comment" id="comment"></textarea></li>
 							</ol>
-							<input type="submit" value="Save" />
+							<input type="submit" value="Save" /> <button class="cancel">Cancel</button>	
 						</fieldset>
 					</form>
 				</section>
 			</article>
+			<article><section><h3>Test</h3></section></article>
 		</div>
 		<footer>
 			<div class="columns two">
 				<article>
 					<section>
-						<p>&copy; 2013 Matthew Choinski<br /><a href="http://www.choinski.net/" target="_blank">http://www.choinski.net/</a></p>
+						<p>&copy; 2023 Matthew Choinski<br /><a href="http://www.choinski.net/" target="_blank">http://www.choinski.net/</a></p>
 					</section>
 				</article>
 				<article>
