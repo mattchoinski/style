@@ -149,6 +149,7 @@ a {
 	color: #4d4d4d;
 }
 body {
+	background-color: #fff;
 	color: #1a1a1a;
 	font-family: -apple-system, sans-serif;
 	font-size: 16px;
@@ -164,11 +165,6 @@ details {
     border-radius: 4px;
     padding: 0.5em 0.5em 0;
 	margin: 2vh 0;
-}
-summary {
-    font-weight: bold;
-    margin: -0.5em -0.5em 0;
-    padding: 0.5em;
 }
 fieldset {
 	display: block;
@@ -203,6 +199,9 @@ footer,
 header {
 	padding: 0 1vw;
 }
+h1 h2 {
+	margin-top: 10vh;
+}
 header {
 	background-color: #1a1a1a;
 	color: #fff;
@@ -226,9 +225,6 @@ textarea {
 }
 label {
 	font-size: 1.05em;
-}
-select {
-	width: 20%;
 }
 input[type=submit] {
 	background: #7c959a;
@@ -254,6 +250,14 @@ p {
 	color: #4d4d4d;
 	opacity: 0.9;
 }
+select {
+	width: 20%;
+}
+summary {
+	font-weight: bold;
+	margin: -0.5em -0.5em 0;
+	padding: 0.5em;
+}
 .columns {
     display: flex;
     flex-flow: row wrap;
@@ -274,11 +278,16 @@ p {
 
 @media ( min-width: 1024px ) {
 	body {
-		background-color: #fff;
 		width: 1024px;
 	}
 }
 @media ( min-width: 768px ) and ( max-width: 1023px ) {
+	body {
+		width: 100%;
+	}
 }
-@media ( min-width: 320px ) and ( max-width: 767px ) { /* 736 target */
+@media ( min-width: 320px ) and ( max-width: 767px ) { 
+	body {
+		width: 100%;
+	}
 }
