@@ -218,6 +218,21 @@ dialog {
 dialog button {
 	float: right;
 } 
+div.error,
+div.success,
+div.working {
+	background-color: #fafafa;
+	border-bottom: 1px solid #6f797a;
+	font-size: 1.1em;
+	padding: 1vw;
+}
+div.error p {
+	color: #93000a;
+}
+div.success p,
+div.working p{
+	color: #6f9654;
+}
 dl,
 fieldset {
 	display: block;
@@ -254,6 +269,7 @@ fieldset .error {
 	padding-left: 0.5em;
 }
 footer {
+	background-color: #eaeff0;
 	color: #666;
 	font-size: 0.9em;
 	opacity: 0.8;
@@ -291,12 +307,28 @@ textarea {
 	padding: 12px;
 	width: 100%;
 }
-label {
-	font-size: 1.05em;
-}
 input::placeholder {
 	font-weight: 200;
 	opacity: 0.5;
+}
+label {
+	font-size: 1.05em;
+}
+nav {
+	background-color: #aec2c7;
+	position: relative;
+}
+nav ul {
+	margin: 0;
+	padding: 1vw;
+}
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	vertical-align: middle;
+}
+nav ul li:last-child {
+	float: right;
 }
 ol.list,
 ul.list {
@@ -348,7 +380,7 @@ tr:hover td {
 .columns {
     display: flex;
     flex-flow: row wrap;
-    align-content: flex-start;;
+    align-content: flex-start;
 }
 .columns article {
 	width: 100%;
