@@ -363,6 +363,11 @@ tr:hover td {
 .columns.three article {
 	width: 33.33%;
 }
+.columns.center button,
+.columns.center input[type=submit] {
+	display: block;
+	width: 100%;
+}
 .columns.two article {
 	width: 50%;
 }
