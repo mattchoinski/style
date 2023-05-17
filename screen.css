@@ -204,11 +204,14 @@ details summary::-webkit-details-marker {
 }
 details>summary::before {
 	content: url(data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgo8dGl0bGU+a2V5Ym9hcmRfYXJyb3dfcmlnaHQ8L3RpdGxlPgo8cGF0aCBkPSJNOC41NzggMTYuNTk0bDQuNTk0LTQuNTk0LTQuNTk0LTQuNTk0IDEuNDA2LTEuNDA2IDYgNi02IDZ6Ij48L3BhdGg+Cjwvc3ZnPgo=);
-	
+	float: left;
+	margin: -2px 0 0 0;
 }
 
 details[open]>summary::before {
 	content: url(data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgo8dGl0bGU+a2V5Ym9hcmRfYXJyb3dfZG93bjwvdGl0bGU+CjxwYXRoIGQ9Ik03LjQwNiA4LjU3OGw0LjU5NCA0LjU5NCA0LjU5NC00LjU5NCAxLjQwNiAxLjQwNi02IDYtNi02eiI+PC9wYXRoPgo8L3N2Zz4K);
+	float: left;
+	margin: -2px 0 0 0;
 }
 details.section {
 	border: 0;
@@ -237,7 +240,8 @@ div.working {
 	font-size: 1.1em;
 	padding: 1vw;
 }
-div.error p {
+div.error p,
+fieldset label sup {
 	color: #93000a;
 }
 div.success p,
