@@ -240,8 +240,7 @@ div.working {
 	font-size: 1.1em;
 	padding: 1vw;
 }
-div.error p,
-fieldset label sup {
+div.error p {
 	color: #93000a;
 }
 div.success p,
@@ -431,6 +430,10 @@ tr:hover td {
 }
 .hidden {
 	display: none;
+}
+li:has(:required) label::after {
+	content: "*";
+	/*content: url(data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgo8dGl0bGU+ZXJyb3Jfb3V0bGluZTwvdGl0bGU+CjxwYXRoIGQ9Ik0xMiAyMC4wMTZxMy4yODEgMCA1LjY0OC0yLjM2N3QyLjM2Ny01LjY0OC0yLjM2Ny01LjY0OC01LjY0OC0yLjM2Ny01LjY0OCAyLjM2Ny0yLjM2NyA1LjY0OCAyLjM2NyA1LjY0OCA1LjY0OCAyLjM2N3pNMTIgMi4wMTZxNC4xMjUgMCA3LjA1NSAyLjkzdDIuOTMgNy4wNTUtMi45MyA3LjA1NS03LjA1NSAyLjkzLTcuMDU1LTIuOTMtMi45My03LjA1NSAyLjkzLTcuMDU1IDcuMDU1LTIuOTN6TTExLjAxNiA2Ljk4NGgxLjk2OXY2aC0xLjk2OXYtNnpNMTEuMDE2IDE1aDEuOTY5djIuMDE2aC0xLjk2OXYtMi4wMTZ6Ij48L3BhdGg+Cjwvc3ZnPgo=);*/
 }
 
 @media ( min-width: 1024px ) {

@@ -8,14 +8,8 @@
         <link href="screen.css" rel="stylesheet" type="text/css" />
         <title>style.choinski.net</title>
     </head>
+	<symbol id="icon-error_outline" viewBox="0 0 24 24"><pathd="M12 20.016q3.281 0 5.648-2.367t2.367-5.648-2.367-5.648-5.648-2.367-5.648 2.367-2.367 5.648 2.367 5.648 5.648 2.367zM12 2.016q4.125 0 7.055 2.93t2.93 7.055-2.93 7.055-7.055 2.93-7.055-2.93-2.93-7.055 2.93-7.055 7.055-2.93zM11.016 6.984h1.969v6h-1.969v-6zM11.016 15h1.969v2.016h-1.969v-2.016z"></path></symbol>
     <body>
-		<svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			<defs>
-				<symbol id="icon-check-circle" viewBox="0 0 1024 1024">
-					<path d="M733.714 419.429q0-16-10.286-26.286l-52-51.429q-10.857-10.857-25.714-10.857t-25.714 10.857l-233.143 232.571-129.143-129.143q-10.857-10.857-25.714-10.857t-25.714 10.857l-52 51.429q-10.286 10.286-10.286 26.286 0 15.429 10.286 25.714l206.857 206.857q10.857 10.857 25.714 10.857 15.429 0 26.286-10.857l310.286-310.286q10.286-10.286 10.286-25.714zM877.714 512q0 119.429-58.857 220.286t-159.714 159.714-220.286 58.857-220.286-58.857-159.714-159.714-58.857-220.286 58.857-220.286 159.714-159.714 220.286-58.857 220.286 58.857 159.714 159.714 58.857 220.286z"></path>
-				</symbol>
-			</defs>
-		</svg>
 		<header>
 		    <h1>style<b class="hidden-phone-portrait">.choinski.net</b></h1>
 		</header>
@@ -174,7 +168,7 @@
 					<form>
 						<fieldset>
 							<ol>
-								<li><label for="nickname">Nickname <sup>*</sup></label> <input name="nickname" id="nickname" placeholder="Type here" type="text" /><p class="error">Error</p></li>
+								<li><label for="nickname">Nickname</label> <sup></sup><input name="nickname" id="nickname" placeholder="Type here" required type="text" /><p class="error">Error</p></li>
 								<li>
 									<label for="choice">Yes or No</label>
 									<select class="small" name="choice" id="choice">
@@ -209,7 +203,20 @@
 					</form>
 				</section>
 			</article>
-			<article><section><h3>Test</h3></section></article>
+			<article>
+				<section>
+					<h3>Test</h3>
+				<p>SVG:
+					<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+						<symbol>
+							<path
+								d="M12 20.016q3.281 0 5.648-2.367t2.367-5.648-2.367-5.648-5.648-2.367-5.648 2.367-2.367 5.648 2.367 5.648 5.648 2.367zM12 2.016q4.125 0 7.055 2.93t2.93 7.055-2.93 7.055-7.055 2.93-7.055-2.93-2.93-7.055 2.93-7.055 7.055-2.93zM11.016 6.984h1.969v6h-1.969v-6zM11.016 15h1.969v2.016h-1.969v-2.016z">
+							</path>
+						</symbol>
+					</svg>
+				</p>
+				</section>
+			</article>
 		</div>
 		<footer>
 			<div class="columns two">
