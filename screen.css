@@ -444,6 +444,14 @@ tr:hover td {
 .hidden {
 	display: none;
 }
+.icon {
+	fill: #1a1a1a;
+	height: 1em;
+	width: 1em;
+}
+.ionc-menu {
+	display: none;
+}
 li:has(:required) label::after {
 	content: "＊";
 }
