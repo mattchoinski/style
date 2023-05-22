@@ -300,9 +300,13 @@ form {
 }
 header {
 	background-color: #1a1a1a;
-	color: #fff;
 	padding-bottom: 1vh;
 	padding-top: 3vh;
+}
+header,
+header a {
+	color: #fff;
+	text-decoration: none;
 }
 header h1 {
 	margin-top: 0;
@@ -323,6 +327,11 @@ textarea {
 	box-sizing: border-box;
 	padding: 12px;
 	width: 100%;
+}
+input:focus,
+select:focus {
+	border: 1px solid #1a1a1a;
+	outline: none;
 }
 input::placeholder {
 	font-weight: 200;
