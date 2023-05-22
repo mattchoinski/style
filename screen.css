@@ -153,10 +153,13 @@ a {
 body {
 	background-color: #fff;
 	color: #1a1a1a;
+	display: flex;
+	flex-direction: column;
 	font-family: -apple-system, sans-serif;
 	font-size: 16px;
 	line-height: 20px;
 	margin: 0 auto 0 auto;
+	min-height: 100vh;
 }
 button,
 input[type=submit] {
@@ -289,6 +292,7 @@ footer {
 	background-color: #eaeff0;
 	color: #666;
 	font-size: 0.9em;
+	margin-top: auto;
 	opacity: 0.8;
 }
 footer,
