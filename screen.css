@@ -146,7 +146,7 @@ template {
 	display: none;
 }
 
-
+/*! style.choinski.net */
 a {
 	color: #4d4d4d;
 }
@@ -256,6 +256,7 @@ fieldset {
 	overflow: hidden;
 }
 dt {
+	clear: both;
 	min-width: 20%;
 }
 fieldset,
@@ -360,15 +361,33 @@ nav ul li {
 nav ul li:last-child {
 	float: right;
 }
+ol.card,
 ol.list,
+ul.card,
 ul.list {
 	padding-left: 0;
 }
+ol.card,
+ul.card {
+	column-count: 2;
+	column-fill: balance;
+}
+ol.card li,
+ul.card li {
+	break-inside: avoid-column;
+	min-height: 20vh;
+	padding: 1vh 0;
+}
+ol.card li,
 ol.list li,
+ul.card li, 
 ul.list li {
 	border-bottom: 1px solid #bfc8ca;
 	list-style: none;
 	overflow: hidden;
+}
+ol.list li,
+ul.list li {
 	width: 100%;
 }
 p {
