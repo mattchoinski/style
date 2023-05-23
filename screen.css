@@ -369,25 +369,36 @@ ul.list {
 }
 ol.card,
 ul.card {
-	column-count: 2;
-	column-fill: balance;
+	display: flex;
+	flex-wrap: wrap;
 }
 ol.card li,
 ul.card li {
-	break-inside: avoid-column;
-	min-height: 20vh;
-	padding: 1vh 0;
+	width: 50%;
+}
+ul.card li details {
+	border: 0;
+	border-radius: 0;
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 1vh;
+}
+ul.card li:nth-child(odd) details {
+	margin-right: 1vw;
+}
+ul.card li details summary {
+	font-size: 1.1em;
+	font-weight: normal;
 }
 ol.card li,
 ol.list li,
 ul.card li, 
 ul.list li {
-	border-bottom: 1px solid #bfc8ca;
 	list-style: none;
 	overflow: hidden;
 }
 ol.list li,
 ul.list li {
+	border-bottom: 1px solid #bfc8ca;
 	width: 100%;
 }
 p {
