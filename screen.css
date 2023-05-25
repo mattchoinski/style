@@ -188,6 +188,7 @@ button.cancel {
 dd,
 dt {
 	float: left;
+	padding-bottom: 1vh;
 }
 details {
     border: 1px solid #aaa;
@@ -210,7 +211,6 @@ details>summary::before {
 	float: left;
 	margin: -2px 0 0 0;
 }
-
 details[open]>summary::before {
 	content: url(data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgo8dGl0bGU+a2V5Ym9hcmRfYXJyb3dfZG93bjwvdGl0bGU+CjxwYXRoIGQ9Ik03LjQwNiA4LjU3OGw0LjU5NCA0LjU5NCA0LjU5NC00LjU5NCAxLjQwNiAxLjQwNi02IDYtNi02eiI+PC9wYXRoPgo8L3N2Zz4K);
 	float: left;
@@ -303,6 +303,18 @@ header {
 form {
 	width: 100%;
 }
+h1 span,
+h2 span,
+h3 span {
+	float: right;
+	white-space: nowrap;
+}
+h1 span svg,
+h2 span svg {
+	fill: #666;
+	height: 1.50em;
+	width: 1.50em;
+}
 header {
 	background-color: #1a1a1a;
 	padding-bottom: 1vh;
@@ -360,6 +372,9 @@ nav ul li {
 }
 nav ul li:last-child {
 	float: right;
+}
+nav ul li a span {
+	display: none;
 }
 ol.card,
 ol.list,
@@ -481,6 +496,9 @@ tr:hover td {
 }
 .ionc-menu {
 	display: none;
+}
+.no-border {
+	border: 0;
 }
 li:has(:required) label::after {
 	content: "＊";
