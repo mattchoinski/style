@@ -173,7 +173,7 @@ input[type=submit] {
 	transition: all 0.2s ease;
 	min-width: 20vw;
 }
-button,
+button:hover,
 input[type=submit]:hover {
 	color: #dbe4e6;
 }
