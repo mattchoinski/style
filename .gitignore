@@ -3,3 +3,4 @@
 /node_modules/**
 rpexch-*
 *.html
+.DS_Store

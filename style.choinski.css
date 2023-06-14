@@ -176,7 +176,6 @@ input[type=submit] {
 button,
 input[type=submit]:hover {
 	color: #dbe4e6;
-	filter: contrast(115%);
 }
 button.cancel {
 	color: #899294;
@@ -294,7 +293,6 @@ footer {
 	color: #666;
 	font-size: 0.9em;
 	margin-top: auto;
-	opacity: 0.8;
 }
 footer,
 header {
