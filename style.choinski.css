@@ -193,6 +193,8 @@ details {
     border: 1px solid #aaa;
     border-radius: 4px;
     padding: 0.5em 0.5em 0;
+}
+details + details {
 	margin: 2vh 0;
 }
 details summary {
@@ -294,12 +296,34 @@ footer {
 	font-size: 0.9em;
 	margin-top: auto;
 }
+footer article section {
+    padding: 0.5vh 1vh;
+}
+footer p {
+    margin-bottom: 0.25vh;
+}
+footer p,
+footer ul {
+    margin-top: 0;
+}
+footer ul {
+    padding: 0;
+}
+footer ul li {
+    list-style: none;
+    padding: 0;
+}
 footer,
 header {
 	padding: 0 1vw;
 }
 form {
 	width: 100%;
+}
+h1,
+h2,
+h3 {
+	margin-top: 0;
 }
 h1 span,
 h2 span,
@@ -370,6 +394,7 @@ nav ul li {
 }
 nav ul li:last-child {
 	float: right;
+	margin-right: 0 !important;
 }
 nav ul li a span {
 	display: none;
@@ -420,7 +445,6 @@ ul.list li {
 }
 p {
 	color: #4d4d4d;
-	opacity: 0.9;
 }
 select {
 	appearance: none;
