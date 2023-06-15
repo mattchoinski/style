@@ -374,6 +374,10 @@ nav ul li:last-child {
 nav ul li a span {
 	display: none;
 }
+ol li,
+ul li {
+	margin-bottom: 2vh;
+}
 ol.card,
 ol.list,
 ul.card,
