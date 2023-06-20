@@ -329,7 +329,6 @@ h1 span,
 h2 span,
 h3 span {
 	float: right;
-	white-space: nowrap;
 }
 h1 span svg,
 h2 span svg {
