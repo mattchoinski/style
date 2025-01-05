@@ -76,14 +76,6 @@ button,
 select { 
 	text-transform: none;
 }
-/*
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-	-webkit-appearance: button;
-}
-*/
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -358,6 +350,7 @@ input[type=checkbox] {
 	vertical-align: middle;
 	width: 1.15em;
 }
+input[type=password],
 input[type=text],
 select,
 textarea {
