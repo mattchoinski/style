@@ -373,6 +373,9 @@ input::placeholder {
 label {
 	font-size: 1.05em;
 }
+main {
+	padding-bottom: 1em;
+}
 nav {
 	background-color: #aec2c7;
 	position: relative;
@@ -485,6 +488,11 @@ tr:hover td {
 .columns article section {
 	padding: 1vw;
 }
+.columns.alert {
+	border: red solid 1px;
+	width: 100%;
+}
+.columns.alert p,
 .columns.center {
 	margin: 0 auto;
 }
@@ -496,6 +504,9 @@ tr:hover td {
 .columns.center input[type=submit] {
 	display: block;
 	width: 100%;
+}
+.columns.four article {
+	width: 25%;
 }
 .columns.two article {
 	width: 50%;
