@@ -31,6 +31,13 @@ template, [hidden] { display: none; }
 header { background-color: #1a1a1a; color: #fff; padding: 3vh 1vw 1vh 1vw; }
 main header { background-color: transparent; color: #1a1a1a; padding: 1rem 0; }
 footer { background-color: #eaeff0; color: #666; font-size: 0.9em; margin-top: auto; padding: 1vh 1vw; }
+footer ul > li {
+    display: inline;
+    margin-right: 15px; 
+} 
+footer ul > li:first-child {
+    list-style-type: none;
+}
 
 /* Desktop Grid System */
 .columns { display: grid; gap: 1.5rem; align-content: flex-start; }
@@ -42,6 +49,9 @@ fieldset,
 fieldset ol {
     margin: 0;
     padding: 0;
+}
+fieldset ol {
+    margin-bottom: 10px;
 }
 fieldset ol li {
     list-style-type: none;
@@ -55,6 +65,14 @@ fieldset ol li label {
 /* UI Elements */
 input[type=email], input[type=password], input[type=tel], input[type=text], select, textarea {
     border: 1px solid #999; border-radius: 2px; box-sizing: border-box; padding: 12px; width: 100%;
+}
+input[type=email].medium,
+input[type=password].medium,
+input[type=tel].medum,
+input[type=text].medium,
+select.medium,
+textarea.medium {
+    width: 50%;
 }
 button, input[type=submit] {
     background: #7c959a; border: 1px solid #7c959a; border-radius: 2px; color: #fff;
