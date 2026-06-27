@@ -38,8 +38,22 @@ footer { background-color: #eaeff0; color: #666; font-size: 0.9em; margin-top: a
 .columns.two { grid-template-columns: 1fr 1fr; }
 .columns.three { grid-template-columns: 1fr 1fr 1fr; }
 
+fieldset, 
+fieldset ol {
+    margin: 0;
+    padding: 0;
+}
+fieldset ol li {
+    list-style-type: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+fieldset ol li label {
+    padding-bottom: 10px;
+}
+
 /* UI Elements */
-input[type=password], input[type=tel], input[type=text], select, textarea {
+input[type=email], input[type=password], input[type=tel], input[type=text], select, textarea {
     border: 1px solid #999; border-radius: 2px; box-sizing: border-box; padding: 12px; width: 100%;
 }
 button, input[type=submit] {
